@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@font-face {
+    font-family: Lato;
+    src: url(fonte/Lato-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: Garamond;
+    src: url(fonte/EBGaramond-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(fonte/Roboto-Regular.ttf) format(truetype);
+}
+
+body {
+    background-color: #F4F1E3;
+    color: #333333;
+    font-family: Roboto;
+    margin: 0px;
+}
+
+header {
+    background-color: #246637;
+    color: white;
+    background-attachment: scroll;
+    min-width: 320px;
+    position: sticky;
+    top: 0px;
+    text-align: start;
+}
+header > h1 {
+    font-family: Bonodi;
+    display: inline-block;
+    margin: 0;
+
+    padding: 30px;
+}
+nav {
+    display: inline-block;
+
+    padding: 10px;
+}
+nav > a {
+    color: white;
+    text-decoration: none;
+    font-family: roboto;
+    padding-right: 15px;
+    font-weight: 700;
+    transition-duration: 0.3s;
+}
+nav :hover {
+    background-color: #f4f1e3b4;
+    color: #246637;
+    border-radius: 4px;
+    padding: 8px 8px 10px 8px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px;
+}
+.conteudo {
+    display: flex;
+    gap: 20px;
+    margin: auto;
+    border-radius: 14px;
+}
+main h1 {
+    text-align: start;
+    font-size: 48px;
+    margin: 18px 0px;
+    font-family: Garamond ;
+}
+main h2 {
+    font-size: 32px;
+    font-family: Garamond;
+    font-weight: 700;
+}
+main h3 {
+    font-size: 24px;
+    font-family: Garamond;
+}
+main p {
+    line-height: 1.5em;
+    font-size: 1.125em ;
+}
+main li {
+    line-height: 1.7em;
+    font-size: 1.125em ;
+}
+
+article {
+    flex: 4; 
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1), 0 1px 10px 0 rgba(0, 0, 0, .1);
+    min-width: 320px;
+    max-width: 840px;
+    padding: 20px;
+    border-radius: 8px;
+    
+}
+aside {
+    flex: 2; 
+    position: sticky;
+    top: 110px;
+    align-self: flex-start;
+    min-width: 100px;
+    max-width: 320px;
+}
+aside a {
+    color:  rgb(70, 67, 58);
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 10px 5px;
+    display: block;
+}
+aside a:hover {
+    text-decoration: none;
+}
+.titulos-aside{
+    margin: 7px 3px;
+    color: rgb(114, 109, 95);
+    font-size: 26px;
+    font-family: Garamond;
+    font-weight: 600;
+}
+aside >div.lista-vejamais {
+    background-color: rgb(251, 249, 244);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+div.extra {
+    background-color: rgb(251, 249, 244);
+    border: 2px solid rgb(193, 224, 201);
+    padding: 10px;
+}
+.item {
+    color:  rgba(70, 67, 58, 0.935);
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px 5px;
+}
+hr {
+    margin: 12px 0px;
+    border: 1px solid rgb(193, 224, 201);
+}
+img {
+	width: 98%;
+}
+footer {
+    text-align: center;
+}
