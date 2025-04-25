@@ -1,5 +1,7 @@
-@charset "UTF-8";
+@charset "UTF-8"; /*Define o conjunto de caracteres a ser utilizado na exibição do conteúdo de um site*/
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+/*Fontes importadas*/
 @font-face {
     font-family: Lato;
     src: url(fonte/Lato-Regular.ttf) format(truetype);
@@ -25,40 +27,38 @@ header {
     color: white;
     background-attachment: scroll;
     min-width: 320px;
-    position: sticky;
-    top: 0px;
-    text-align: start;
+    position: sticky; /*Define o elemento como fixo*/
+    top: 0px; /*Distancia que o elemento ficará do topo da pagina*/
+    text-align: start; 
 }
 header > h1 {
     font-family: Bonodi;
-    display: inline-block;
+    display: inline-block; /*O h1 é por padrão um bloco, ao ser definido como inline conseguimos fazer com que o nav fique ao seu lado e não embaixo*/
     margin: 0;
-
     padding: 30px;
 }
 nav {
     display: inline-block;
-
     padding: 10px;
 }
-nav > a {
+nav > a {  /*O simbolo > indica que o nav é o elemento anterior ao a (a está dentro de nav)*/
     color: white;
     text-decoration: none;
     font-family: roboto;
     padding-right: 15px;
-    font-weight: 700;
-    transition-duration: 0.3s;
+    font-weight: 700; /*font weight é espessura da fonte, pode ser light normarl bold em bolder ou pode ser definido em escala numérica de 100 a 900*/
+    transition-duration: 0.3s; /*Dá um efeito de fade in ao passar o mouse pelo link*/
 }
-nav :hover {
+nav :hover { /*O dois pontos indica uma pseudo-classe que nesse caso é o hover, todos os eventos definidos abaixo do nav:hover acontecerão enquanto o mouse estiver sobre o nav */
     background-color: #f4f1e3b4;
-    color: #246637;
+    color: #246637; /*Quando passar o mouse sobre o nav o texto ficará verde*/
     border-radius: 4px;
     padding: 8px 8px 10px 8px;
 }
 
 main {
-    max-width: 1200px;
-    margin: 0 auto; 
+    max-width: 1200px; /*Faz com que o conteúdo não vá do inicio ao fim da tela já que isso dificultaria e leitura em dispositivos grandes como tvs*/
+    margin: 0 auto; /*você pode definir a margin de forma diferente para cada lado (ex. margin: 2x 5px 2px 5px) sendo o primeiro número define a margin do top e segue no sentido horario. Nesse caso como top e bottom são 2px e right e left são 2px pode-se simplificar (ex. margin: 2px 5px)*/ 
     padding: 20px;
 }
 .conteudo {
@@ -83,11 +83,11 @@ main h3 {
     font-family: Garamond;
 }
 main p {
-    line-height: 1.5em;
+    line-height: 1.5em; /*1em é igual a 16px que é o tamanho padrão para texto no html, em é mais recomendado pois o tamanho dos pixels pode ser diferente em alguns dispositivos*/
     font-size: 1.125em ;
 }
 main li {
-    line-height: 1.7em;
+    line-height: 1.7em; /*Aumenta o espaçamento entre linhas*/
     font-size: 1.125em ;
 }
 
@@ -95,7 +95,7 @@ article {
     flex: 4; 
     background-color: #ffffff;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1), 0 1px 10px 0 rgba(0, 0, 0, .1);
-    min-width: 320px;
+    min-width: 320px; /*Evite que o site continue quebrando ao chegas 320px que o menor tamanho que um celular pode ter*/
     max-width: 840px;
     padding: 20px;
     border-radius: 8px;
@@ -103,9 +103,9 @@ article {
 }
 aside {
     flex: 2; 
-    position: sticky;
-    top: 110px;
-    align-self: flex-start;
+    position: sticky; /*Mantém o conteudo do aside fixo na tela*/
+    top: 110px; /*Distância dele para o topo*/
+    align-self: flex-start; /*não lembro oq isso faz kkkkkk*/
     min-width: 100px;
     max-width: 320px;
 }
@@ -150,7 +150,7 @@ hr {
     border: 1px solid rgb(193, 224, 201);
 }
 img {
-	width: 98%;
+	width: 98%; /*A imagem prencherá 98% da tela, isso que significa que o diminuir o tamanho da tela o tamanho da imagem acompanhará as alterações */
 }
 footer {
     text-align: center;
