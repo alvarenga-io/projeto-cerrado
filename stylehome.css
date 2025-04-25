@@ -36,7 +36,7 @@ header nav {
 header a {
     color: #246637;
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: none; /*Tira o underline do link*/
     padding: 5px 11px;
 }
 .hero {
