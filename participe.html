@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .icon-section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+            background-color: #ffffff;
+        }
+
+        .icon-card {
+            background-color: #fff8ed;
+            border-radius: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px 30px;
+            text-align: center;
+            width: 180px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .icon-card p {
+            font-size: 0.9em;
+            text-align: justify;
+            color: gray;
+        }
+
+        .icon-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .icon-card img {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 15px;
+        }
+
+        .icon-card h3 {
+            font-size: 1.1em;
+            color: #3a5a40;
+            margin: 0;
+        }
+        .formulario {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fffdf7;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .formulario label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #4e5b31;
+        }
+
+        .formulario input,
+        .formulario textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: Arial, sans-serif;
+            background-color: #fefcf9;
+        }
+
+        .formulario input:focus,
+        .formulario textarea:focus {
+            border-color: #8bc34a;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(139, 195, 74, 0.2);
+        }
+
+        .formulario button {
+            background-color: #6aa84f;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .formulario button:hover {
+            background-color: #558b2f;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CERRADO VIVO</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre o Cerrado</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="edu.html">Educação ambiental</a>
+            <a href="participe.html">Participe</a>
+        </nav>
+    </header>
+    <main>
+        <div class="conteudo">
+            <article>
+                <h1>Participe da Preservação do Cerrado</h1>
+                <p>Descubra como você pode fazer a diferença </p>
+                <p>A preservação do Cerrado depende do envolvimento de todos. Seja você estudante, educador, agricultor ou cidadão consciente, há diversas formas de contribuir para a valorização e conservação desse bioma único.</p>
+                <section class="icon-section">
+                    <div class="icon-card">
+                      <img src="imagens/icones/clipboard-list.png" alt="Surplus">
+                      <h3>Contribua com Ideias</h3>
+                      <p>Tem sugestões de quiz, atividades educativas ou novas seções para o site ou app? Envie suas ideias pelo nosso formulário!</p>
+                    </div>
+                    <div class="icon-card">
+                      <img src="imagens/icones/mobile-notch.png" alt="Inputs">
+                      <h3>Use e Compartilhe o Aplicativo</h3>
+                      <p>Responda aos quizzes e compartilhe com seus amigos! Aprender sobre o Cerrado pode ser divertido e transformador.</p>
+                    </div>
+                    <div class="icon-card">
+                      <img src="imagens/icones/rocket-lunch.png" alt="Learn More">
+                      <h3>Eduque e Compartilhe Conhecimento</h3>
+                      <p>Participe divulgando informações sobre o Cerrado nas escolas, nas redes sociais e em eventos da sua comunidade. Leve o conhecimento adiante!</p>
+                    </div>
+                  </section>
+                <h2>Contribua no formulário abaixo!</h2>
+                  <form class="formulario">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                  
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                  
+                    <label for="mensagem">Como você quer participar?</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua ideia, relato ou sugestão..."></textarea>
+                  
+                    <button type="submit">Enviar</button>
+                  </form>
+                  
+                  
+                  
+                  
+            </article>
+            <aside>
+                <div class="extra">
+                    <h3 class="titulos-aside">Links</h3>
+                    <a href="link-app.html" class="btn">Baixar o App</a>
+                    <a href="quiz.html" class="btn">Responder Quizzes</a>
+                    <a href="galeria.html" class="btn">Ver Galeria</a>
+                  </div>
+                  
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <p>	&#169; CC1A42 2025</p>
+    </footer>
+</body>
+</html>

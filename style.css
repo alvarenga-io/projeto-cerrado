@@ -50,10 +50,9 @@ nav > a {  /*O simbolo > indica que o nav é o elemento anterior ao a (a está d
     transition-duration: 0.3s; /*Dá um efeito de fade in ao passar o mouse pelo link*/
 }
 nav :hover { /*O dois pontos indica uma pseudo-classe que nesse caso é o hover, todos os eventos definidos abaixo do nav:hover acontecerão enquanto o mouse estiver sobre o nav */
-    background-color: #f4f1e3b4;
-    color: #246637; /*Quando passar o mouse sobre o nav o texto ficará verde*/
+    color: #c4dccb; /*Quando passar o mouse sobre o nav o texto ficará verde*/
     border-radius: 4px;
-    padding: 8px 8px 10px 8px;
+    font-size: 1.1em;
 }
 
 main {
