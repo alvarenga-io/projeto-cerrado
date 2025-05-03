@@ -40,19 +40,27 @@ header a {
     padding: 5px 11px;
 }
 .hero {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Flona_Paraopeba_-_Meio_do_cerrado.jpg) ;
+    /*
+    background-image: url(https://faunanews.com.br/wp-content/uploads/2025/05/Parque_Estadual_Encontro_das_Aguas_Thomas-Fuhrmann-CC-BY-SA-4.0.webp) ;
+     */
+    /*
+     background-image: url(https://www.infoescola.com/wp-content/uploads/2008/05/onca-pintada-591459416.jpg); 
+    */
+    background-image: url(https://f.i.uol.com.br/fotografia/2022/11/16/166864858163758e8561194_1668648581_3x2_rt.jpg);
     background-size: cover;
+    background-position: center, left;
+    background-attachment: fixed;
+    box-shadow: inset 1px 2px 5px 1px black;
     color: white;
-    text-shadow: 0 0 15px black;
-    height: 65vh;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.812);
+    height:80vh;
     display: flex;
     align-items: center;
-    
     padding: 0 20px;
 }
 .hero-content {
-    
-    padding: 20px;
+    background-color: rgba(192, 166, 166, 0.516);
+    padding: 30px;
     border-radius: 10px;
 }
 .hero h1 {
