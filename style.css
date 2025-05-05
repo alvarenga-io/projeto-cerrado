@@ -14,7 +14,10 @@
     font-family: Roboto;
     src: url(fonte/Roboto-Regular.ttf) format(truetype);
 }
-
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     background-color: #F4F1E3;
     color: #333333;
@@ -37,11 +40,20 @@ header > h1 {
     margin: 0;
     padding: 30px;
 }
-nav {
-    display: inline-block;
-    padding: 10px;
+menu {
+    display: none;
+    margin-left: -1px;
+    margin-right: -1px;
 }
-nav > a {  /*O simbolo > indica que o nav é o elemento anterior ao a (a está dentro de nav)*/
+menu ul {
+    list-style: none;
+}
+menu li {
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.656);
+    cursor: pointer;
+}
+menu a {  /*O simbolo > indica que o nav é o elemento anterior ao a (a está dentro de nav)*/
     color: white;
     text-decoration: none;
     font-family: roboto;
@@ -49,7 +61,7 @@ nav > a {  /*O simbolo > indica que o nav é o elemento anterior ao a (a está d
     font-weight: 700; /*font weight é espessura da fonte, pode ser light normarl bold em bolder ou pode ser definido em escala numérica de 100 a 900*/
     transition-duration: 0.3s; /*Dá um efeito de fade in ao passar o mouse pelo link*/
 }
-nav :hover { /*O dois pontos indica uma pseudo-classe que nesse caso é o hover, todos os eventos definidos abaixo do nav:hover acontecerão enquanto o mouse estiver sobre o nav */
+a :hover { /*O dois pontos indica uma pseudo-classe que nesse caso é o hover, todos os eventos definidos abaixo do nav:hover acontecerão enquanto o mouse estiver sobre o nav */
     color: #c4dccb; /*Quando passar o mouse sobre o nav o texto ficará verde*/
     border-radius: 4px;
     font-size: 1.1em;

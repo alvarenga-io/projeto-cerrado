@@ -6,17 +6,22 @@
     <title>Galeria</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/icones/favicon-galeria.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+
 </head>
 <body>
     <header>
         <h1>CERRADO VIVO</h1>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="galeria.html">Galeria</a>
-            <a href="edu.html">Educação ambiental</a>
-            <a href="participe.html">Participe</a>
-        </nav>
+            <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</span>
+            <menu id="itens">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="edu.html">Educação ambiental</a></li>
+                    <li><a href="participe.html">Participe</a></li>
+                </ul>
+            </menu>
     </header>
     <main>
         <div class="conteudo">
