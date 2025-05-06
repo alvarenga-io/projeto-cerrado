@@ -1,4 +1,17 @@
 @charset "UTF-8"; /*Define o conjunto de caracteres a ser utilizado na exibição do conteúdo de um site*/
+
+@media screen and (min-width: 782px) {
+    #burguer {
+        display: none;
+    }
+    menu#itens {
+        display: inline-block;
+    }
+    menu > ul > li {
+        display: inline-block;
+    }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 
 /*Fontes importadas*/
@@ -14,10 +27,8 @@
     font-family: Roboto;
     src: url(fonte/Roboto-Regular.ttf) format(truetype);
 }
-* {
-    margin: 0;
-    padding: 0;
-}
+
+
 body {
     background-color: #F4F1E3;
     color: #333333;
@@ -38,21 +49,21 @@ header > h1 {
     font-family: Bonodi;
     display: inline-block; /*O h1 é por padrão um bloco, ao ser definido como inline conseguimos fazer com que o nav fique ao seu lado e não embaixo*/
     margin: 0;
-    padding: 30px;
+    padding: 20px 15px;
 }
 menu {
     display: none;
-    margin-left: -1px;
-    margin-right: -1px;
+    padding: 0;
 }
 menu ul {
+    padding: 0;
     list-style: none;
 }
 menu li {
-    padding: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.656);
+    padding: 12px 5px;;
     cursor: pointer;
 }
+
 menu a {  /*O simbolo > indica que o nav é o elemento anterior ao a (a está dentro de nav)*/
     color: white;
     text-decoration: none;
@@ -61,7 +72,7 @@ menu a {  /*O simbolo > indica que o nav é o elemento anterior ao a (a está de
     font-weight: 700; /*font weight é espessura da fonte, pode ser light normarl bold em bolder ou pode ser definido em escala numérica de 100 a 900*/
     transition-duration: 0.3s; /*Dá um efeito de fade in ao passar o mouse pelo link*/
 }
-a :hover { /*O dois pontos indica uma pseudo-classe que nesse caso é o hover, todos os eventos definidos abaixo do nav:hover acontecerão enquanto o mouse estiver sobre o nav */
+a:hover { /*O dois pontos indica uma pseudo-classe que nesse caso é o hover, todos os eventos definidos abaixo do nav:hover acontecerão enquanto o mouse estiver sobre o nav */
     color: #c4dccb; /*Quando passar o mouse sobre o nav o texto ficará verde*/
     border-radius: 4px;
     font-size: 1.1em;

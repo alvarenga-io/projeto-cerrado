@@ -64,17 +64,26 @@
             </div>
 
     </main>
-    <script>
-        function clickMenu () {
-            if (itens.style.display =='block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-        }
-    </script>
+
     <footer> <!--Rodapé do site-->
         <p>	&#169; CC1A42 2025</p>
     </footer>
+    <script>
+        function mudouTamanho () {
+            if (window.innerwidth >= 768) {
+                itens.style.display = 'inline-block'
+            } else {
+                itens.style.display ='none'
+            }
+        }
+        function clickMenu () {
+           if (itens.style.display == 'inline-block') {
+            itens.style.display = 'none'
+           } else {
+            itens.style.display = 'block'
+
+           }
+        }
+    </script>
 </body>
 </html>

@@ -1,9 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 /*Import de imagens por url, sem fazer o download*/
+@media  screen and (min-width: 782px) {
+    span#burguer {
+        display: none;
+    }
+    menu#itens {
+        display: inline-block;
+    }
+    menu li {
+        display: inline-block;
+
+    }
+}
 * {
     margin: 0;
     padding: 0px;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -31,7 +44,7 @@ header h1 {
     background-color: #ffffff;
     display: block;
     
-    padding: 10px;
+    padding: 12px ;
     cursor: pointer;
 }
 menu {
@@ -41,9 +54,8 @@ menu ul {
     list-style: none;
 }
 menu li {
-    background-color: rgb(248, 244, 244);
     border: 1px solid white;
-    padding: 12px;
+    padding: 12px 5px;
 }
 .header a:hover {
     font-size: 1.1em;
