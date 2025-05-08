@@ -11,6 +11,9 @@
         display: inline-block;
 
     }
+    section.section1 {
+        flex-direction: row;
+    }
 }
 * {
     margin: 0;
@@ -77,7 +80,7 @@ header a {
     background-size: cover;
     background-position: center, left;
     background-attachment: fixed;
-    box-shadow: inset 1px 2px 5px 1px black;
+    box-shadow: inset 1px 2px 5px 1px black; /*Sombra projetada para dentro*/
     color: white;
     
     height:80vh;
@@ -115,4 +118,53 @@ header a {
 
 .btn:hover {
     background-color: #388E3C;
+}
+
+.section1 {
+    padding: 100px;
+    flex-direction: column;
+}
+.section1 img {
+    display: flex;
+    width: 550px;
+
+    border-radius: 35px;
+    margin: 30px;
+}
+.section2 {
+    display: flex;
+}
+.titulos-home {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #1f5b30;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.section2 p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: darkslategray;
+}
+.section2 li {
+    padding-left: 30px;
+}
+.section2 ul {
+    list-style: none;
+}
+
+footer {
+    background-color:  #0e240f;;
+    color: rgba(255, 255, 255, 0.821);
+    padding: 50px;
+}
+footer li {
+    padding: 2px;
+    font-size: 0.9em;
+}
+footer ul {
+    list-style: none;
+    columns: 2;
+    width: 500px;
+
 }
