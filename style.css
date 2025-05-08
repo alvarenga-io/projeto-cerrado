@@ -10,6 +10,12 @@
     menu > ul > li {
         display: inline-block;
     }
+
+    div.conteudo {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
@@ -85,6 +91,7 @@ main {
 }
 .conteudo {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     margin: auto;
     border-radius: 14px;
@@ -113,8 +120,7 @@ main li {
     font-size: 1.125em ;
 }
 
-article {
-    flex: 4; 
+article { 
     background-color: #ffffff;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1), 0 1px 10px 0 rgba(0, 0, 0, .1);
     min-width: 320px; /*Evite que o site continue quebrando ao chegas 320px que o menor tamanho que um celular pode ter*/
@@ -124,10 +130,6 @@ article {
     
 }
 aside {
-    flex: 2; 
-    position: sticky; /*Mantém o conteudo do aside fixo na tela*/
-    top: 110px; /*Distância dele para o topo*/
-    align-self: flex-start; /*não lembro oq isso faz kkkkkk*/
     min-width: 100px;
     max-width: 320px;
 }
