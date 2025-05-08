@@ -42,7 +42,7 @@ header h1 {
 }
 #burguer {
     background-color: #ffffff;
-    display: block;
+    display: inline-block;
     
     padding: 12px ;
     cursor: pointer;
@@ -65,7 +65,6 @@ header a {
     color: #246637;
     font-weight: bold;
     text-decoration: none; /*Tira o underline do link*/
-    padding: 10px 11px;
 }
 .hero {
     /*
