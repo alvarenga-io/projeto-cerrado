@@ -1,5 +1,9 @@
 @charset "UTF-8"; /*Define o conjunto de caracteres a ser utilizado na exibição do conteúdo de um site*/
-
+@media screen and (min-width: 1150px){
+    div.conteudo {
+        flex-direction: row;  /*O conteudo do article e do aside serão exibidos lado a lado */
+    }
+}
 @media screen and (min-width: 782px) { /*Define algumas configurações que serão utilizadas em telas a oartir de 782px (tablet e notebook)*/
     #burguer {
         display: none; /*O botão do menu desaparece*/
@@ -11,9 +15,7 @@
         display: inline-block;
     }
 
-    div.conteudo {
-        flex-direction: row;  /*O conteudo do article e do aside serão exibidos lado a lado */
-    }
+    
     div.icon-section {
         flex-direction: row /*Os cards serão exibidos lado a lado*/
     }
