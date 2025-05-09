@@ -11,9 +11,6 @@
         display: inline-block;
 
     }
-    section.section1 {
-        flex-direction: row;
-    }
 }
 * {
     margin: 0;
@@ -70,12 +67,6 @@ header a {
     text-decoration: none; /*Tira o underline do link*/
 }
 .hero {
-    /*
-    background-image: url(https://faunanews.com.br/wp-content/uploads/2025/05/Parque_Estadual_Encontro_das_Aguas_Thomas-Fuhrmann-CC-BY-SA-4.0.webp) ;
-     */
-    /*
-     background-image: url(https://www.infoescola.com/wp-content/uploads/2008/05/onca-pintada-591459416.jpg); 
-    */
     background-image: url(https://f.i.uol.com.br/fotografia/2022/11/16/166864858163758e8561194_1668648581_3x2_rt.jpg);
     background-size: cover;
     background-position: center, left;
@@ -119,20 +110,8 @@ header a {
 .btn:hover {
     background-color: #388E3C;
 }
-
-.section1 {
-    padding: 100px;
-    flex-direction: column;
-}
-.section1 img {
-    display: flex;
-    width: 550px;
-
-    border-radius: 35px;
-    margin: 30px;
-}
 .section2 {
-    display: flex;
+        padding: 100px;
 }
 .titulos-home {
     font-size: 1.6em;
@@ -152,7 +131,6 @@ header a {
 .section2 ul {
     list-style: none;
 }
-
 footer {
     background-color:  #0e240f;;
     color: rgba(255, 255, 255, 0.821);
@@ -166,5 +144,4 @@ footer ul {
     list-style: none;
     columns: 2;
     width: 500px;
-
 }
