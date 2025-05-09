@@ -15,7 +15,7 @@
         flex-direction: row;  /*O conteudo do article e do aside serão exibidos lado a lado */
     }
     div.icon-section {
-        flex-direction: row
+        flex-direction: row /*Os cards serão exibidos lado a lado*/
     }
     
 }
