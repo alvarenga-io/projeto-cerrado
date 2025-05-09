@@ -111,7 +111,8 @@ header a {
     background-color: #388E3C;
 }
 .section2 {
-        padding: 100px;
+    padding: 100px;
+    padding-right: 0;
 }
 .titulos-home {
     font-size: 1.6em;
