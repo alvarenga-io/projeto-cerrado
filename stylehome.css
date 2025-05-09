@@ -111,7 +111,7 @@ header a {
     background-color: #388E3C;
 }
 .section2 {
-    padding: 90px;
+    padding: 70px;
     padding-right: 0;
 }
 .titulos-home {
@@ -143,6 +143,5 @@ footer li {
 }
 footer ul {
     list-style: none;
-    columns: 2;
     width: 500px;
 }
