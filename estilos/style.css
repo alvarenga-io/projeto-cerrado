@@ -21,6 +21,16 @@
     }
     
 }
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px; 
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 18px; 
+  }
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 
@@ -53,6 +63,7 @@ header {
     text-align: start; 
 }
 header > h1 {
+     font-size: clamp(1.8rem, 4vw, 3rem);
     font-family: 'Times New Roman',  serif;
     display: inline-block; /*O h1 é por padrão um bloco, ao ser definido como inline conseguimos fazer com que o nav fique ao seu lado e não embaixo*/
     margin: 0;
