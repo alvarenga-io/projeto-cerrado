@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
-/*Import de imagens por url, sem fazer o download*/
+
 @media  screen and (min-width: 782px) {
     span#burguer {
         display: none;
@@ -35,7 +34,7 @@ body {
 }
 
 header h1 {
-    font-family: Bonodi, 'Times New Roman', Times, serif;
+    font-family:  'Times New Roman',  serif;
     display: inline-block;
     padding: 30px;
     margin: 0;
@@ -67,7 +66,7 @@ header a {
     text-decoration: none; /*Tira o underline do link*/
 }
 .hero {
-    background-image: url(https://f.i.uol.com.br/fotografia/2022/11/16/166864858163758e8561194_1668648581_3x2_rt.jpg);
+    background-image: url(../imagens/onca-filhote.jpg);
     background-size: cover;
     background-position: center, left;
     background-attachment: fixed;
