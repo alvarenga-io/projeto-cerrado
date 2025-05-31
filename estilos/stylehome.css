@@ -4,7 +4,13 @@
     font-size: 14px;
   }
 }
-@media  screen and (min-width: 782px) {
+@media  screen and (min-width: 700px) {
+    div.hero  {
+        background-image: url(../imagens/onca-filhote.jpg);
+        background-size: cover;
+        background-position: center, left;
+        background-attachment: fixed;
+    }
     span#burguer {
         display: none;
     }
@@ -79,7 +85,7 @@ header a {
     text-decoration: none; /*Tira o underline do link*/
 }
 .hero {
-    background-image: url(../imagens/onca-filhote.jpg);
+    background-image: url(../imagens/onca-filhote-mobile.jpg);
     background-size: cover;
     background-position: center, left;
     background-attachment: fixed;
