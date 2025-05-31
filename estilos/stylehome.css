@@ -4,7 +4,7 @@
     font-size: 14px;
   }
 }
-@media  screen and (min-width: 700px) {
+@media  screen and (min-width: 768px) {
     div.hero  {
         background-image: url(../imagens/onca-filhote.jpg);
         background-size: cover;
