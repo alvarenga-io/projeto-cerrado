@@ -60,6 +60,7 @@ header {
     position: sticky; /*Define o elemento como fixo*/
     top: 0px; /*Distancia que o elemento ficará do topo da pagina*/
     text-align: start; 
+    z-index: 1;
 }
 header > h1 {
     font-size: clamp(2rem, 3vw, 1.9rem);    

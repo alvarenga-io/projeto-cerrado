@@ -3,9 +3,12 @@
   html {
     font-size: 14px;
   }
+  section.summary {
+        grid-template-columns: 1fr;
+    }
 }
 @media  screen and (min-width: 768px) {
-    div.hero  {
+    section.hero  {
         background-image: url(../imagens/onca-filhote.jpg);
         background-size: cover;
         background-position: center, left;
@@ -21,6 +24,7 @@
         display: inline-block;
 
     }
+    
 }
 
 @media screen and (min-width: 1024px) {
@@ -32,6 +36,7 @@
 * {
     margin: 0;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -128,26 +133,36 @@ header a {
 .btn:hover {
     background-color: #388E3C;
 }
-.section2 {
-    padding: 60px;
-    padding-right: 0;
+.section {
+    min-height: 90vh;
 }
-.titulos-home {
+.main-content {
+    max-width: 1500px;
+}
+.summary {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 6rem;
+    padding: 8rem 5rem;
+    place-content: center;
+}
+
+.summary-img img {
+    max-width: 30rem;
+}
+.summary h4{
     font-size: 1.6em;
     font-weight: bold;
     color: #1f5b30;
     margin-bottom: 20px;
     margin-top: 10px;
 }
-.section2 p {
+.summary p {
     margin-bottom: 20px;
     font-size: 1.2em;
     color: darkslategray;
 }
-.section2 li {
-    padding-left: 30px;
-}
-.section2 ul {
+.summary ul {
     list-style: none;
 }
 footer {
